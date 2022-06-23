@@ -3,8 +3,6 @@ const secBtns = document.querySelectorAll('.controls')
 const secBtn = document.querySelectorAll('.control')
 const allSections = document.querySelectorAll('.main-content')
 
-const themeBtn = document.querySelector('.theme-btn')
-
 secBtns.forEach((btn) => {
     btn.addEventListener('click', (e) => {
         document.querySelector('.active-btn').classList.remove('active-btn')
@@ -13,9 +11,4 @@ secBtns.forEach((btn) => {
         let secElement = document.querySelector(`#${e.target.dataset.id}`)
         secElement.classList.add('active')
     })
-})
-
-themeBtn.addEventListener('click', () => {
-    let body = document.body
-    body.classList.toggle('light-mode')
 })

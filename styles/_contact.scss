@@ -1,20 +1,10 @@
 .contact-container {
     width: 80%;
     margin-top: 3rem;
-    // display: flex;
-    // padding-top: 3.5rem;
-    // background-color: $grey-5;
     .contacts {
         display: flex;
         padding-top: 3.5rem;
-        // flex: 2;
         flex-direction: column;
-        // h4 {
-        //     margin-top: 1rem;
-        //     font-size: 2rem;
-        //     text-transform: uppercase;
-        //     align-self: center;
-        // }
         p {
             margin: 1rem 0;
             line-height: 2rem;
@@ -27,7 +17,6 @@
                 p {
                     margin: 0.3rem 0 !important;
                     padding: 0;
-                    // white-space: pre;
                 }
                 .icon {
                     display: grid;
@@ -71,34 +60,4 @@
             }
         }
     }
-    // .right-contact {
-    //     flex: 3;
-    //     margin-left: 3rem;
-    //     .input-control {
-    //         margin: 1.5rem 0;
-    //         input,
-    //         textarea {
-    //             border-radius: 30px;
-    //             font-weight: inherit;
-    //             font-size: inherit;
-    //             font-family: inherit;
-    //             padding: 0.8rem 1.1rem;
-    //             outline: none;
-    //             border: none;
-    //             background-color: $grey-5;
-    //             width: 100%;
-    //             color: $white;
-    //             resize: none;
-    //         }
-    //     }
-    //     .i-c-2 {
-    //         display: flex;
-    //          :last-child {
-    //             margin-left: 1.5rem;
-    //         }
-    //     }
-    //     .submit-btn {
-    //         display: flex;
-    //     }
-    // }
 }
