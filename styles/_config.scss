@@ -1,0 +1,60 @@
+$primary: #191d2b;
+// $secondary: #27ae60;
+$secondary: #278aae;
+// $secondary: #f17c0f;
+$white: #ffffff;
+$black: #000;
+$grey0: #f8f8f8;
+$grey-1: #dbe1e8;
+$grey-2: #b2becd;
+$grey-3: #6c7983;
+$grey-4: #454e56;
+$grey-5: #2a2e35;
+$grey-6: #12181b;
+$br-sm-2: 14px;
+$box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
+@mixin transition-ease {
+    transition: all 0.4s ease-in-out;
+}
+
+@mixin first-col {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+@mixin second-col {
+    grid-column-start: 5;
+    grid-column-end: 9;
+}
+
+@mixin third-col {
+    grid-column-start: 9;
+    grid-column-end: 13;
+}
+
+@mixin first-row {
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+@mixin second-row {
+    grid-row-start: 5;
+    grid-row-end: 9;
+}
+
+@mixin third-row {
+    grid-row-start: 9;
+    grid-row-end: 13;
+}
+
+@mixin pic-hover {
+    @include transition-ease;
+    transform: scale(1.3) rotate(360deg) translate(5px, 5px);
+    z-index: 100;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

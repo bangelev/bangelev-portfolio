@@ -1,0 +1,207 @@
+@media screen and (max-width: 600px) {
+    section {
+        padding: 2rem 3rem;
+        margin-bottom: 2rem;
+        .main-title {
+            h2 {
+                font-size: 2rem;
+            }
+            .bg-text {
+                font-size: 3rem;
+                font-weight: 900;
+            }
+        }
+    }
+    .header {
+        padding: 0;
+        .header-content {
+            grid-template-columns: 1fr;
+            padding-bottom: 6rem;
+            margin: 2rem;
+            .right-header {
+                grid-row: 1;
+                padding-right: 0;
+                margin: 0 auto;
+                width: 90%;
+                .name {
+                    font-size: 2rem;
+                    span {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+            .left-header {
+                .h-shape {
+                    display: none;
+                }
+                .image {
+                    margin: 0 auto;
+                    width: 90%;
+                }
+            }
+        }
+    }
+    .about {
+        .about-container {
+            grid-template-columns: 1fr;
+            .right-about {
+                margin-top: 2rem;
+                padding: 1rem;
+            }
+            .left-about {
+                padding-right: 0;
+                p {
+                    padding-left: 0;
+                }
+            }
+        }
+        .about-stats {
+            .progress-bars {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+    .portfolio {
+        .portfolios {
+            grid-template-columns: 1fr;
+        }
+         ::after {
+            content: '';
+            height: 60px;
+        }
+    }
+    .contact-container {
+        width: 100%;
+        .contacts {
+            .contact-info {
+                font-size: 1rem;
+            }
+        }
+    }
+    .controls {
+        top: auto;
+        bottom: 0;
+        flex-direction: row;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: $grey-5;
+        .control {
+            margin: 1rem 0.3rem;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 992px) {
+    .section {
+        width: 100%;
+        padding: 2rem;
+    }
+    .header {
+        padding: 0 4rem;
+        .header-content {
+            grid-template-columns: 1fr;
+            padding-bottom: 6rem;
+            margin: 2rem;
+            .right-header {
+                grid-row: 1;
+                padding-right: 0;
+                margin: 0 auto;
+                width: 90%;
+                .name {
+                    font-size: 2rem;
+                    span {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+            .left-header {
+                .h-shape {
+                    display: none;
+                }
+                .image {
+                    margin: 0 auto;
+                    width: 90%;
+                }
+            }
+        }
+    }
+    .portfolios {
+        padding-right: 4rem;
+        .portfolio-item {
+            .hover-item {
+                h2 {
+                    font-size: 1.1rem;
+                    padding: 0.5rem;
+                }
+                h3 {
+                    font-size: 1rem;
+                }
+                .icons {
+                    .icon {
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+            }
+        }
+    }
+    .about {
+        .about-container {
+            grid-template-columns: 1fr;
+            padding-right: 4rem;
+            .right-about {
+                margin-top: 2rem;
+                padding: 1rem;
+                .gallery {
+                    padding: 0;
+                }
+            }
+            .left-about {
+                padding-right: 0;
+                p {
+                    padding-left: 0;
+                }
+            }
+        }
+        .about-stats {
+            padding-right: 4rem;
+            .progress-bars {
+                grid-template-columns: 1fr;
+            }
+        }
+         ::after {
+            content: '';
+            height: 20px;
+        }
+    }
+    .contact-container {
+        width: 100%;
+        padding: 0rem 4rem;
+        .contacts {
+            .contact-info {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+    .section {
+        width: 100%;
+        padding: 2rem 4rem;
+    }
+    .header .right-header {
+        padding: 2rem 4rem;
+    }
+    .about {
+        .about-container,
+        .about-stats {
+            padding-right: 4rem;
+        }
+    }
+    .portfolios {
+        padding-right: 4rem;
+    }
+}
