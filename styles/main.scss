@@ -6,85 +6,86 @@
 @import 'portfolios';
 @import 'contact';
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: $primary;
-    font-size: 1.1rem;
-    color: $white;
-    @include transition-ease;
+  font-family: 'Poppins', sans-serif;
+  background-color: $primary;
+  font-size: 1.1rem;
+  color: $white;
+  @include transition-ease;
 }
 
 header {
-    min-height: 100vh;
-    color: $white;
-    overflow: hidden;
+  min-height: 100vh;
+  color: $white;
+  overflow: hidden;
 }
 
 a {
-    display: inline-block;
-    text-decoration: none;
-    font-family: inherit;
-    color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
 }
 
 section {
-    min-height: 100vh;
-    width: 100%;
-    position: absolute;
-    padding: 3rem 18rem;
-    left: 0;
-    top: 0;
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  // padding: 3rem 18rem;
+  padding: 3rem 8rem;
+  left: 0;
+  top: 0;
 }
 
 .section {
-    display: none;
-    transform: translateY(-100) scale(0);
-    background-color: $primary;
+  display: none;
+  transform: translateY(-100) scale(0);
+  background-color: $primary;
 }
 
 .sec1 {
-    display: none;
-    transform: translateY(0) scale(1);
+  display: none;
+  transform: translateY(0) scale(1);
 }
 
 .sec2 {
-    display: none;
-    transform: translateY(0) scale(1);
+  display: none;
+  transform: translateY(0) scale(1);
 }
 
 .sec3 {
-    display: none;
-    transform: translateY(0) scale(1);
+  display: none;
+  transform: translateY(0) scale(1);
 }
 
 .sec4 {
-    display: none;
-    transform: translateY(0) scale(1);
+  display: none;
+  transform: translateY(0) scale(1);
 }
 
 .sec5 {
-    display: none;
-    transform: translateY(0) scale(1);
+  display: none;
+  transform: translateY(0) scale(1);
 }
 
 .active {
-    display: block;
-    animation: appear 1s ease-in-out;
-    transform: translateY(0) scaleY(1);
-    @keyframes appear {
-        0% {
-            transform: translateY(-100%) scaleY(0);
-        }
-        100% {
-            transform: translateY(0) scaleY(1);
-        }
+  display: block;
+  animation: appear 1s ease-in-out;
+  transform: translateY(0) scaleY(1);
+  @keyframes appear {
+    0% {
+      transform: translateY(-100%) scaleY(0);
     }
+    100% {
+      transform: translateY(0) scaleY(1);
+    }
+  }
 }
 
 @import 'media';

@@ -1,179 +1,123 @@
 .about-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding-top: 3.5rem;
-    padding-bottom: 5.5rem;
-    .gallery {
-        max-width: 100%;
-        max-height: 100vh;
-        border: 1px solid $secondary;
-        overflow: hidden;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(12, 1/2fr);
-        filter: grayscale(100);
-        &:hover {
-            cursor: pointer;
-            filter: grayscale(0); // transform: scale(1.5, 1.5);
-            transform: scale(1.1);
-            @include transition-ease;
-            border: 1px solid $secondary;
-        }
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .image1 {
-            @include first-col;
-            @include first-row;
-            z-index: 0;
-            filter: blur(2px);
-        }
-        .image2 {
-            @include second-col;
-            @include first-row;
-            z-index: 0;
-        }
-        .image3 {
-            @include third-col;
-            @include first-row;
-            filter: blur(2px);
-            z-index: 0;
-        }
-        .image4 {
-            @include first-col;
-            @include second-row;
-            z-index: 0;
-        }
-        .image5 {
-            grid-column-start: 4;
-            grid-column-end: 10;
-            grid-row-start: 4;
-            grid-row-end: 10;
-            z-index: 2;
-            &:hover {
-                @include transition-ease;
-                transform: scale(1.5) rotate(360deg);
-                z-index: 100;
-            }
-        }
-        .image6 {
-            @include third-col;
-            @include second-row;
-        }
-        .image7 {
-            @include first-col;
-            @include third-row;
-            z-index: 0;
-            filter: blur(2px);
-        }
-        .image8 {
-            @include second-col;
-            @include third-row;
-            z-index: 0;
-        }
-        .image9 {
-            @include third-col;
-            @include third-row;
-            filter: blur(2px);
-            z-index: 0;
-        }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 3.5rem;
+  padding-bottom: 1.5rem;
+  .gallery {
+    max-width: 100%;
+    // max-height: 100vh;
+    max-height: 300px;
+    // border: 1px solid $secondary;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-    .left-about {
-        padding-right: 5rem;
-        p {
-            line-height: 1.5rem;
-            padding: 1rem;
-            color: $grey-1;
-            span {
-                color: $secondary;
-            }
-            span:nth-of-type(1) {
-                font-size: 1.5rem;
-                font-style: italic;
-            }
-        }
-        h4 {
-            text-transform: uppercase;
-            font-size: 2rem;
-            text-align: center;
-        }
-        .main-btn {
-            margin-top: 3rem;
-        }
+  }
+  .left-about {
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    /* Vertically center align */
+    justify-content: center;
+    /* Horizontally center align */
+    height: 300px;
+    overflow: hidden;
+    p {
+      text-align: center;
+      line-height: 1.5rem;
+      padding: 1rem;
+      color: $grey-1;
+      text-align: start;
+      .about-span {
+        color: $secondary;
+      }
+      // span:nth-of-type(1) {
+      //   font-size: 1.5rem;
+      //   font-style: italic;
+      // }
     }
+    h4 {
+      text-transform: uppercase;
+      font-size: 2rem;
+      text-align: center;
+    }
+    .main-btn {
+      margin-top: 3rem;
+    }
+  }
 }
 
 .about-stats {
-    padding-bottom: 4rem;
-    .progress-bars {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2rem;
-        .progress-bar {
-            display: flex;
-            flex-direction: column;
-            .prog-title {
-                text-transform: uppercase;
-                font-weight: 500;
-            }
-            .progress-con {
-                display: flex;
-                align-items: center;
-                .prog-text {
-                    color: $grey-2;
-                }
-                .progress {
-                    width: 100%;
-                    height: 0.45rem;
-                    background-color: $grey-4;
-                    margin-left: 1rem;
-                    position: relative;
-                    span {
-                        position: absolute;
-                        height: 100%;
-                        top: 0;
-                        left: 0;
-                        background-color: $secondary;
-                        @include transition-ease;
-                        width: 60%;
-                    }
-                    .html {
-                        width: 80%;
-                    }
-                    .css {
-                        width: 90%;
-                    }
-                    .js {
-                        width: 75%;
-                    }
-                    .react {
-                        width: 80%;
-                    }
-                    .node {
-                        width: 90%;
-                    }
-                }
-            }
+  padding-bottom: 4rem;
+  .progress-bars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    .progress-bar {
+      display: flex;
+      flex-direction: column;
+      .prog-title {
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+      .progress-con {
+        display: flex;
+        align-items: center;
+        .prog-text {
+          color: $grey-2;
         }
+        .progress {
+          width: 100%;
+          height: 0.45rem;
+          background-color: $grey-4;
+          margin-left: 1rem;
+          position: relative;
+          span {
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: $secondary;
+            @include transition-ease;
+            width: 60%;
+          }
+          .html {
+            width: 80%;
+          }
+          .css {
+            width: 90%;
+          }
+          .js {
+            width: 75%;
+          }
+          .react {
+            width: 80%;
+          }
+          .node {
+            width: 90%;
+          }
+        }
+      }
     }
+  }
 }
 
 .stat-title {
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 3.5rem 0;
-    position: relative;
-    &::before {
-        content: '';
-        position: absolute;
-        left: 50%;
-        top: 0;
-        width: 40%;
-        height: 1px;
-        background-color: $grey-5;
-        transform: translateX(-50%);
-    }
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 3.5rem 0;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 40%;
+    height: 1px;
+    background-color: $grey-5;
+    transform: translateX(-50%);
+  }
 }
