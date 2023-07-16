@@ -22,14 +22,15 @@
     /* Vertically center align */
     justify-content: center;
     /* Horizontally center align */
-    height: 300px;
-    overflow: hidden;
+    height: auto;
+    // text-align: start;
+    overflow: auto;
+    // max-height: 350px;
     p {
-      text-align: center;
+      // text-align: center;
       line-height: 1.5rem;
       padding: 1rem;
       color: $grey-1;
-      text-align: start;
       .about-span {
         color: $secondary;
       }

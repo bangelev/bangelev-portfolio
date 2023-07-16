@@ -172,6 +172,7 @@
       }
       .left-about {
         padding-right: 0;
+        text-align: justify;
         p {
           padding-left: 0;
         }
@@ -229,10 +230,11 @@
   .about-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
     .gallery {
       grid-row: 2;
       overflow: hidden;
@@ -245,13 +247,14 @@
       align-items: center;
       justify-content: center;
       min-height: 100%;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      //   padding-top: 1rem;
+      //   padding-bottom: 1rem;
       /* Allow the element to expand vertically */
       padding: 1rem;
       white-space: normal;
       word-break: break-word;
       overflow: auto;
+      text-align: center;
       /* Enable scrolling for overflowing content */
     }
   }

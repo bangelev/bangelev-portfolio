@@ -24,16 +24,14 @@
   /* Vertically center align */
   justify-content: center;
   /* Horizontally center align */
-  height: 300px;
-  overflow: hidden;
+  height: auto;
+  overflow: auto;
 }
 
 .about-container .left-about p {
-  text-align: center;
   line-height: 1.5rem;
   padding: 1rem;
   color: #dbe1e8;
-  text-align: start;
 }
 
 .about-container .left-about p .about-span {
@@ -731,6 +729,7 @@ section {
   }
   .about .about-container .left-about {
     padding-right: 0;
+    text-align: justify;
   }
   .about .about-container .left-about p {
     padding-left: 0;
@@ -778,10 +777,11 @@ section {
   .about-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
   }
   .about-container .gallery {
     grid-row: 2;
@@ -795,13 +795,12 @@ section {
     align-items: center;
     justify-content: center;
     min-height: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
     /* Allow the element to expand vertically */
     padding: 1rem;
     white-space: normal;
     word-break: break-word;
     overflow: auto;
+    text-align: center;
     /* Enable scrolling for overflowing content */
   }
 }
